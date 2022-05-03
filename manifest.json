@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "name": "Partiu!",
+  "description": "Extensão teste",
+  "author": "Gustavo Zaffani",
+  "browser_action": {
+    "default_title": "Partiu!",
+    "default_popup": "index.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "jquery.min.js",
+        "index.js"
+      ],
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ]
+    }
+  ]
+}
