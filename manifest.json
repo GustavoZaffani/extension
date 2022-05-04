@@ -1,18 +1,17 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "version": "0.0.1",
-  "name": "Partiu!",
-  "description": "Extensão teste",
+  "name": "Design Pattens - ERPx",
+  "description": "Extensão responsável por organizar links de documentação.",
   "author": "Gustavo Zaffani",
-  "browser_action": {
-    "default_title": "Partiu!",
+  "action": {
+    "default_title": "Patterns!",
     "default_popup": "index.html",
     "default_icon": "icon.png"
   },
   "content_scripts": [
     {
       "js": [
-        "jquery.min.js",
         "index.js"
       ],
       "matches": [
@@ -20,5 +19,8 @@
         "https://*/*"
       ]
     }
+  ],
+  "permissions": [
+    "tabs"
   ]
 }
